@@ -53,7 +53,6 @@ Given shipping addresses and a set of packages, generate a quote for the cost of
 - Present the relevant shipping information to the user during the checkout process
   - Cost
   - Delivery estimate
-  - Tracking information (when available)
 
 ### Testing
 - 95% test coverage for all API Controller routes, Model validations, and Model methods
