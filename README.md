@@ -44,7 +44,6 @@ Given shipping addresses and a set of packages, generate a quote for the cost of
 - Respond with JSON and proper HTTP response codes  
 - Allow Users to get shipping cost quotes for different delivery types (standard, express, overnight, etc.)
 - Allow Users to get a cost comparison of two or more carriers  
-- Log all requests and their associated responses such that an audit could be conducted  
 - Have appropriate error handling:
   - When a User's request is incomplete, return an appropriate error
   - When a User's request does not process in a timely manner, return an appropriate error
@@ -60,6 +59,7 @@ Given shipping addresses and a set of packages, generate a quote for the cost of
 - 95% test coverage for all API Controller routes, Model validations, and Model methods
 
 ### Added Fun!
+- Log all requests and their associated responses such that an audit could be conducted  
 - Do some refactoring of the bEtsy project you're working on
 - Allow merchants to view the total shipping costs for all of their products in a particular order
 - Find the seam in bEtsy app between the shopping and payment processing, and build a payment processing service
