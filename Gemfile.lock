@@ -20,12 +20,12 @@ GEM
       erubis (~> 2.7.0)
       rails-dom-testing (~> 1.0, >= 1.0.5)
       rails-html-sanitizer (~> 1.0, >= 1.0.2)
-    active_shipping (1.6.5)
-      active_utils (~> 3.2.0)
+    active_shipping (1.4.3)
+      active_utils (~> 3.0.0)
       activesupport (>= 3.2, < 5.0.0)
       nokogiri (>= 1.6)
       quantified (~> 1.0.1)
-    active_utils (3.2.0)
+    active_utils (3.0.0)
       activesupport (>= 3.2)
       i18n
     activejob (4.2.5)
@@ -90,6 +90,9 @@ GEM
     git-version-bump (0.15.1)
     globalid (0.3.6)
       activesupport (>= 4.1.0)
+    httparty (0.13.7)
+      json (~> 1.8)
+      multi_xml (>= 0.5.2)
     i18n (0.7.0)
     jbuilder (2.4.0)
       activesupport (>= 3.0.0, < 5.1)
@@ -112,6 +115,7 @@ GEM
     mini_portile2 (2.0.0)
     minitest (5.8.3)
     multi_json (1.11.2)
+    multi_xml (0.5.5)
     nokogiri (1.6.7.1)
       mini_portile2 (~> 2.0.0.rc2)
     pg (0.18.4)
@@ -230,7 +234,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  active_shipping
+  active_shipping (~> 1.4.3)
   better_errors
   binding_of_caller
   bootstrap-sass (~> 3.3, >= 3.3.5.1)
@@ -239,6 +243,7 @@ DEPENDENCIES
   dotenv-rails
   factory_girl_rails (~> 4.0)
   font-awesome-rails
+  httparty
   jbuilder (~> 2.0)
   jquery-rails
   meta_request

@@ -1,6 +1,7 @@
 source 'https://rubygems.org'
 
 # Shipping requests
+gem 'httparty'
 gem 'active_shipping', '~> 1.4.3'
 
 #style
