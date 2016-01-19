@@ -1,6 +1,7 @@
 source 'https://rubygems.org'
 
-gem 'active_shipping'
+# Shipping requests
+gem 'active_shipping', '~> 1.4.3'
 
 #style
 gem "font-awesome-rails"

@@ -71,3 +71,8 @@ bower.json
 
 # Ignore pow environment settings
 .powenv
+
+
+/.env
+/.active_shipping
+/spec/vcr
