@@ -1,6 +1,6 @@
 class ShipmentsController < ApplicationController
   def rates
-    ship_json = JSON.parse(params[:json_data])["ship"]
+    ship_json = JSON.parse(params[:json_data])["shipment"]
     ups_rates = Ups.new.find_rates(ship_json)
     usps_rates = Usps.new.find_rates(ship_json)
 
