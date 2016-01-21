@@ -3,6 +3,8 @@ source 'https://rubygems.org'
 # Shipping requests
 gem 'active_shipping', '~> 1.4.3'
 
+gem 'dotenv-rails', :groups => [:development, :test]
+
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.5'
 # Use sqlite3 as the database for Active Record
@@ -42,6 +44,7 @@ group :development, :test do
   gem 'rspec-rails'
   gem 'simplecov'
   gem 'pry'
+  gem 'factory_girl_rails', '~> 4.0'
   gem 'vcr', '2.2.5'
 end
 
@@ -53,6 +56,9 @@ group :development do
   # Better errors
   gem 'better_errors'
   gem 'binding_of_caller'
+
+  # erd pdf
+  gem 'rails-erd'
 
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
   gem 'spring'
