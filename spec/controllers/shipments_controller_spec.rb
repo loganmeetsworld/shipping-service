@@ -33,8 +33,10 @@ RSpec.describe ShipmentsController, type: :controller do
     end
 
     it "returns json even if empty" do 
-      get :rates, json_data: @json
-      expect(JSON.parse(response.response_code)).to eq 204
+      VCR.use_cassette("shipment_controller_api_empty", :record => :new_episodes) do 
+        get :rates, json_data: @json
+        expect(response.response_code).to eq 204
+      end
     end
 
   end
